@@ -1,0 +1,17 @@
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\Core.dll
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\Entities.dll
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\Core.pdb
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\Entities.pdb
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
