@@ -10,7 +10,7 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             CarManager c = new CarManager(new EfCarDal());
-            var result = c.Delete(new Car { ID = 4 });
+            var result = c.Delete(new Car { Id = 4 });
             if (result.Success == true)
             {
                 Console.WriteLine(result.Message);
@@ -57,7 +57,7 @@ namespace ConsoleUI
         private static void DeleteTest()
         {
             CarManager cm = new CarManager(new EfCarDal());
-            cm.Delete(new Car { ID = 2 });
+            cm.Delete(new Car { Id = 2 });
             Console.WriteLine("Data silindi");
         }
 

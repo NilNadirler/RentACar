@@ -18,9 +18,14 @@ namespace DataAccess.Concentre.EntityFramework
             {
                 var result = from c in context.Cars
                              join r in context.Rentals
-                             on c.ID equals r.CarId
+                             on c.Id equals r.CarId
                              join cu in context.Customers
                              on r.CustomerId equals cu.Id
+                             join b in context.Brands
+                             on c.BrandId equals b.BrandId
+                             join u in context.Users
+                             on r.CustomerId equals u.Id
+                             
                              select new RentalDetailDto
                              {
                                  CompanyName = cu.CompanyName,
@@ -28,7 +33,12 @@ namespace DataAccess.Concentre.EntityFramework
                                  Description = c.Description,
                                  ModelYear = c.ModelYear,
                                  RentDate = r.RentDate,
-                                 ReturnDate = r.ReturnDate
+                                 ReturnDate = r.ReturnDate,
+                                 FullName= u.FirstName+u.LastName,
+                                 BrandName= b.BrandName,
+                                 RentalId= r.Id
+
+                                 
                              };
                 return result.ToList();
             }

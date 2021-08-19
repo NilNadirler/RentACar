@@ -14,6 +14,7 @@ using Core.Aspects.Autofac.Validation;
 using Business.BusinessAspects.Autofac;
 using Core.Aspects.Autofac.Cashing;
 using Core.Aspects.Autofac.Transaction;
+using Entities.DTOs;
 
 namespace Business.Concentre
 {
@@ -71,7 +72,7 @@ namespace Business.Concentre
 
         public IDataResult<List<Car>> GetbyColarId(int id)
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c=> c.ID==id));
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c=> c.Id==id));
         }
 
         public IDataResult <List<Car>> GetByDailyPrice(decimal min, decimal max)
@@ -81,13 +82,18 @@ namespace Business.Concentre
         [CacheAspect]
         public IDataResult< Car> GetbyID(int carID)
         {
-            return new SuccessDataResult<Car>(_carDal.Get(c => c.ID == carID));
+            return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == carID));
 
         }
 
         public IDataResult<List<Car>> GetCarsModelYear(int modelYear)
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.ModelYear == modelYear));
+        }
+
+        public IDataResult<List<CarDetailDto>> GetDetails(int id)
+        {
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetDetails());
         }
 
         [ValidationAspect(typeof(CarValidator))]

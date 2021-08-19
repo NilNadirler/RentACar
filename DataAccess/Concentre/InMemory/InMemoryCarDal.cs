@@ -16,10 +16,10 @@ namespace DataAccess.Concentre.InMemory
         public InMemoryCarDal(List<Car> cars)
         {
             _cars = cars;
-            new Car { BrandId = 3, ColorId = 2, DailyPrice = 130, Description = "Renault", ID = 1, ModelYear = 2018 };
-            new Car { BrandId = 6, ColorId = 2, DailyPrice = 150, Description = "Honda", ID = 2, ModelYear = 2012 };
-            new Car { BrandId = 5, ColorId = 2, DailyPrice = 120, Description = "Bmv", ID = 3, ModelYear = 2020 };
-            new Car { BrandId = 5, ColorId = 2, DailyPrice = 110, Description = "Mercedes", ID = 4, ModelYear = 2016 };
+            new Car { BrandId = 3, ColorId = 2, DailyPrice = 130, Description = "Renault", Id = 1, ModelYear = 2018 };
+            new Car { BrandId = 6, ColorId = 2, DailyPrice = 150, Description = "Honda", Id = 2, ModelYear = 2012 };
+            new Car { BrandId = 5, ColorId = 2, DailyPrice = 120, Description = "Bmv", Id = 3, ModelYear = 2020 };
+            new Car { BrandId = 5, ColorId = 2, DailyPrice = 110, Description = "Mercedes", Id = 4, ModelYear = 2016 };
         }
 
         public void Add(Car cars)
@@ -29,7 +29,7 @@ namespace DataAccess.Concentre.InMemory
 
         public void Delete(Car cars)
         {
-            Car carToDelete = _cars.SingleOrDefault(c => c.ID == cars.ID);
+            Car carToDelete = _cars.SingleOrDefault(c => c.Id == cars.Id);
             _cars.Remove(cars);
 
         }
@@ -48,7 +48,7 @@ namespace DataAccess.Concentre.InMemory
 
         public void Update(Car cars)
         {
-            Car toUpdate = _cars.SingleOrDefault(u => u.ID == cars.ID);
+            Car toUpdate = _cars.SingleOrDefault(u => u.Id == cars.Id);
             toUpdate.ColorId = cars.ColorId;
 
         }
@@ -68,7 +68,7 @@ namespace DataAccess.Concentre.InMemory
             throw new NotImplementedException();
         }
 
-        public List<CarDetailDto> GetCarDetails()
+        public List<CarDetailDto> GetDetails()
         {
             throw new NotImplementedException();
         }

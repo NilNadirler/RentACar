@@ -1,5 +1,6 @@
 ﻿using Core.Result;
 using Entities.Concentre;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Business.Abstract
     {
         IDataResult<List<Rental>> GetAll();
         IDataResult<List<Rental>> RentandReturn(DateTime rentdate,DateTime returndate);
-       
+        IDataResult <List<RentalDetailDto>> GetRentalDetails();
         IResult Add(Rental rental);
         IResult Delete(Rental rental);
         IResult Update(Rental rental);

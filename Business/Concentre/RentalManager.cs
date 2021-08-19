@@ -6,6 +6,7 @@ using Core.Result;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concentre;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +55,11 @@ namespace Business.Concentre
         public IDataResult<Rental> GetbyCustomerId(int customerID)
         {
             return new SuccessDataResult<Rental>(_rentaldal.Get(r => r.CustomerId == customerID));
+        }
+
+        public IDataResult<List<RentalDetailDto>> GetRentalDetails()
+        {
+            return new SuccessDataResult<List<RentalDetailDto>>(_rentaldal.GetRentalDetails());
         }
 
         public IDataResult<List<Rental>> RentandReturn(DateTime rentdate, DateTime returndate)

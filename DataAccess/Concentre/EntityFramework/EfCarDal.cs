@@ -14,13 +14,12 @@ namespace DataAccess.Concentre.EntityFramework
 {
     public class EfCarDal : EfEntityRepositoryBase<Car, RecapContext>, ICarDal
     {
-        public List<CarDetailDto> GetCarDetails()
+        public List<CarDetailDto> GetDetails()
         {
             using (RecapContext context = new RecapContext())
             {
                 var result = from c in context.Cars
                              join b in context.Brands
-
                              on c.BrandId equals b.BrandId
                              join co in context.Colors
                              on c.ColorId equals co.ColorId
@@ -29,7 +28,12 @@ namespace DataAccess.Concentre.EntityFramework
                                  Description = c.Description,
                                  ColorName = co.ColorName,
                                  BrandName = b.BrandName,
-                                 DailyPrice = c.DailyPrice
+                                 DailyPrice = c.DailyPrice,
+                                 ModelYear = c.ModelYear,
+                                 CarId=c.Id,
+                                 ColorId=co.ColorId,
+                                 BrandId=b.BrandId
+                                 
 
                              };
                 return result.ToList();
