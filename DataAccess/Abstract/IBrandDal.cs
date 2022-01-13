@@ -9,5 +9,6 @@ namespace DataAccess.Abstract
 {
     public interface IBrandDal : IEntityRepository<Brand>
     {
+        public bool IsUnique(string name);
     }
 }

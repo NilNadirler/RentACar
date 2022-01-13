@@ -10,3 +10,9 @@ C:\Users\nilna\source\repos\RecapProject\Core\bin\Debug\net5.0\Core.pdb
 C:\Users\nilna\source\repos\RecapProject\Core\obj\Debug\net5.0\Core.dll
 C:\Users\nilna\source\repos\RecapProject\Core\obj\Debug\net5.0\ref\Core.dll
 C:\Users\nilna\source\repos\RecapProject\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\nilna\source\repos\RecapProject\Core\bin\Debug\net5.0\Core.runtimeconfig.json
+C:\Users\nilna\source\repos\RecapProject\Core\bin\Debug\net5.0\Core.runtimeconfig.dev.json
+C:\Users\nilna\source\repos\RecapProject\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache
+C:\Users\nilna\source\repos\RecapProject\Core\bin\Debug\net5.0\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\Core\bin\Debug\net5.0\Entegrations.pdb
+C:\Users\nilna\source\repos\RecapProject\Core\obj\Debug\net5.0\Core.csproj.CopyComplete

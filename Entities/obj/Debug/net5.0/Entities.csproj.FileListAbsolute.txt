@@ -13,3 +13,8 @@ C:\Users\nilna\source\repos\RecapProject\Entities\obj\Debug\net5.0\Entities.cspr
 C:\Users\nilna\source\repos\RecapProject\Entities\obj\Debug\net5.0\Entities.dll
 C:\Users\nilna\source\repos\RecapProject\Entities\obj\Debug\net5.0\ref\Entities.dll
 C:\Users\nilna\source\repos\RecapProject\Entities\obj\Debug\net5.0\Entities.pdb
+C:\Users\nilna\source\repos\RecapProject\Entities\bin\Debug\net5.0\Entities.runtimeconfig.json
+C:\Users\nilna\source\repos\RecapProject\Entities\bin\Debug\net5.0\Entities.runtimeconfig.dev.json
+C:\Users\nilna\source\repos\RecapProject\Entities\obj\Debug\net5.0\Entities.genruntimeconfig.cache
+C:\Users\nilna\source\repos\RecapProject\Entities\bin\Debug\net5.0\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\Entities\bin\Debug\net5.0\Entegrations.pdb

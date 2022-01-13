@@ -72,5 +72,25 @@ namespace DataAccess.Concentre.InMemory
         {
             throw new NotImplementedException();
         }
+
+        public List<CarDetailDto> GetByBrandId(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<CarDetailDto> GetByColorId(int colorId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CarDetailDto GetById(int colorId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<CarDetailDto> GetDetailsByFilter(CarDetailDto dto)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

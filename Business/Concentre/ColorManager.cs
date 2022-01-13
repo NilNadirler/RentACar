@@ -23,7 +23,7 @@ namespace Business.Concentre
             _colorDal = colorDal;
         }
 
-        [ValidationAspect(typeof(BrandValidator))]
+        [ValidationAspect(typeof(ColorValidator))]
         public IResult Add(Color user)
         {
             _colorDal.Add(user);

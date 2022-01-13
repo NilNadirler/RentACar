@@ -2,6 +2,7 @@
 using Business.Concentre;
 using DataAccess.Concentre.EntityFramework;
 using Entities.Concentre;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,8 @@ using System.Threading;
 using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
-{ [Route("api/[controller]")]
+{
+    [Route("api/[controller]")]
     [ApiController]
     public class CarsController : ControllerBase
 
@@ -23,11 +25,11 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getall")]
-       
+
         public IActionResult GetAll()
         {
 
-            Thread.Sleep(5000);
+
             var result = _carService.GetAll();
             if (result.Success)
             {
@@ -37,6 +39,26 @@ namespace WebAPI.Controllers
             return BadRequest(result);
 
         }
+
+
+        [HttpPost("datatable")]
+        public IActionResult Datatable(DataTableRequestDto<CarDetailDto> request)
+        {
+            CarDetailDto dto = request.GetEntity();
+            var result = this._carService.GetDetails(null);
+            DataTableResultDto<CarDetailDto> dataTableResultDto = new DataTableResultDto<CarDetailDto>();
+            dataTableResultDto.Draw = request.Draw;
+            dataTableResultDto.RecordsTotal = result.Data.Count;
+            dataTableResultDto.RecordsFiltered = result.Data.Count;
+            if (dto.BrandName!=null)
+            {
+                result = this._carService.GetDetailsByFilter(dto);
+            }
+            int len = (result.Data.Count > request.Start + request.Length) ? request.Length : result.Data.Count - request.Start;
+            dataTableResultDto.Data = result.Data.GetRange(request.Start,len);
+            return Ok(dataTableResultDto);
+        }
+
         [HttpPost("add")]
 
         public IActionResult Add(Car car)
@@ -52,12 +74,11 @@ namespace WebAPI.Controllers
 
         [HttpGet("getbyid")]
         public IActionResult GetbyId(int id)
-
         {
-            var result = _carService.GetByBrandId(id);
+            var result = _carService.GetbyID(id);
             if (result.Success)
             {
-                return Ok(result.Data);
+                return Ok(result);
             }
             return BadRequest(result);
         }
@@ -105,21 +126,35 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-        [HttpGet("getcolorid")]
-        
-            public IActionResult GetColorID(int id)
-            {
-            var result = _carService.GetbyColarId(id);
+
+        [HttpGet("getbycolor")]
+        public IActionResult GetByColorID(int colorId)
+        {
+            var result = _carService.GetByColorId(colorId);
             if (result.Success)
             {
-                return Ok(result.Data);
+                return Ok(result);
             }
             return BadRequest(result);
         }
         [HttpGet("getdetails")]
-        public IActionResult GetDetails(int carId)
+        public IActionResult GetDetails(string brandName=null,string colorName=null)
         {
-            var result = _carService.GetDetails(carId);
+            var dto = new CarDetailDto();
+            dto.BrandName = brandName;
+            dto.ColorName = colorName;
+            if (colorName == null && brandName == null) { dto = null; }
+            var result = _carService.GetDetails(dto);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("getbybrand")]
+        public IActionResult GetByBrandId(int brandId)
+        {
+            var result = _carService.GetByBrandId(brandId);
             if (result.Success)
             {
                 return Ok(result);

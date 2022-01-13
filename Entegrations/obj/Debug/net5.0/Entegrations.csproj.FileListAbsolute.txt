@@ -1,0 +1,12 @@
+C:\Users\nilna\source\repos\RecapProject\Entegrations\bin\Debug\net5.0\Entegrations.deps.json
+C:\Users\nilna\source\repos\RecapProject\Entegrations\bin\Debug\net5.0\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\Entegrations\bin\Debug\net5.0\ref\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\Entegrations\bin\Debug\net5.0\Entegrations.pdb
+C:\Users\nilna\source\repos\RecapProject\Entegrations\obj\Debug\net5.0\Entegrations.csprojAssemblyReference.cache
+C:\Users\nilna\source\repos\RecapProject\Entegrations\obj\Debug\net5.0\Entegrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nilna\source\repos\RecapProject\Entegrations\obj\Debug\net5.0\Entegrations.AssemblyInfoInputs.cache
+C:\Users\nilna\source\repos\RecapProject\Entegrations\obj\Debug\net5.0\Entegrations.AssemblyInfo.cs
+C:\Users\nilna\source\repos\RecapProject\Entegrations\obj\Debug\net5.0\Entegrations.csproj.CoreCompileInputs.cache
+C:\Users\nilna\source\repos\RecapProject\Entegrations\obj\Debug\net5.0\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\Entegrations\obj\Debug\net5.0\ref\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\Entegrations\obj\Debug\net5.0\Entegrations.pdb

@@ -73,5 +73,24 @@ namespace Core.Utilities.FileOperation
                 return false;
             }
         }
+        public static string Base64ImagePath(string imagePath, IWebHostEnvironment env)
+        {
+            //www\images\SavedPictures\nil.jpg
+            try
+            {
+                var path = env.WebRootPath + imagePath;
+                if (File.Exists(path))
+                {
+                    Byte[] bytes = File.ReadAllBytes(path);
+                    return Convert.ToBase64String(bytes);
+
+                }
+                return "";
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
     }
 }

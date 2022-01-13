@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities.DTOs
 {
-    public class CarImageDto: IDto
+    public class CarImageDto : IDto
     {
 
     }

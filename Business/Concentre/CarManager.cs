@@ -7,7 +7,7 @@ using DataAccess.Abstract;
 using Core.Result;
 using Business.Constants;
 using Core.Utilities.Results;
-using FluentValidation;
+
 using Business.ValidationRules.FluentValidation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Aspects.Autofac.Validation;
@@ -22,7 +22,7 @@ namespace Business.Concentre
     {
 
         ICarDal _carDal;
-      public CarManager(ICarDal carDal)
+        public CarManager(ICarDal carDal)
         {
             _carDal = carDal;
         }
@@ -51,38 +51,34 @@ namespace Business.Concentre
             _carDal.Delete(car);
             return new SuccessResult(Messages.UrunSil);
         }
-          [CacheAspect]
-        public IDataResult< List<Car>> GetAll()
+        [CacheAspect]
+        public IDataResult<List<Car>> GetAll()
         {
-            if (DateTime.Now.Hour==22)
-            {
-                return new ErrorDataResult<List<Car>>(default,Messages.MaintenanceTime);
-            }
-            else
-            {
-                return new SuccessDataResult<List<Car>>(_carDal.GetAll(), Messages.ProductAdded);
-            }
-     
+            var result= _carDal.GetAll();
+            return new SuccessDataResult<List<Car>>(result, "Cars listed.");
+
         }
 
-        public IDataResult <List<Car>> GetByBrandId(int id)
+        public IDataResult<List<CarDetailDto>> GetByBrandId(int brandId)
         {
-            return new SuccessDataResult <List < Car >>( _carDal.GetAll(c => c.BrandId == id));
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetByBrandId(brandId));
         }
 
-        public IDataResult<List<Car>> GetbyColarId(int id)
+
+
+        public IDataResult<List<CarDetailDto>> GetByColorId(int ColorId)
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c=> c.Id==id));
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetByColorId(ColorId));
         }
 
-        public IDataResult <List<Car>> GetByDailyPrice(decimal min, decimal max)
+        public IDataResult<List<Car>> GetByDailyPrice(decimal min, decimal max)
         {
-            return new SuccessDataResult<List<Car>>( _carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max));
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max));
         }
         [CacheAspect]
-        public IDataResult< Car> GetbyID(int carID)
+        public IDataResult<CarDetailDto> GetbyID(int carID)
         {
-            return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == carID));
+            return new SuccessDataResult<CarDetailDto>(_carDal.GetById(carID));
 
         }
 
@@ -91,9 +87,16 @@ namespace Business.Concentre
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.ModelYear == modelYear));
         }
 
-        public IDataResult<List<CarDetailDto>> GetDetails(int id)
+        public IDataResult<List<CarDetailDto>> GetDetails(CarDetailDto? dto)
         {
-            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetDetails());
+            var result=_carDal.GetDetails().FindAll(item => dto == null || ((item.BrandName == dto.BrandName || dto.BrandName==null) &&( item.ColorName == dto.ColorName || dto.ColorName==null) && (item.ModelYear == dto.ModelYear || dto.ModelYear == 0) && (item.DailyPrice == dto.DailyPrice || dto.DailyPrice == 0)));
+            return new SuccessDataResult<List<CarDetailDto>>(result,"Cars get with details.");
+        }
+
+        public IDataResult<List<CarDetailDto>> GetDetailsByFilter(CarDetailDto dto)
+        {
+            var result = _carDal.GetDetailsByFilter(dto);
+            return new SuccessDataResult<List<CarDetailDto>>(result, "Cars get with details by filter.");
         }
 
         [ValidationAspect(typeof(CarValidator))]

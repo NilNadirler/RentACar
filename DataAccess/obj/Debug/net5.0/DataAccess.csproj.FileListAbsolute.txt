@@ -15,3 +15,8 @@ C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.
 C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
 C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
 C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\nilna\source\repos\RecapProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\DataAccess\bin\Debug\net5.0\Entegrations.pdb

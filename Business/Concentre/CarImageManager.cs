@@ -68,9 +68,7 @@ namespace Business.Concentre
             return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll());
         }
 
-        public IDataResult<List<CarImage>> GetbyCarID(int Carid)
-
-
+        public IDataResult<List<CarImage>> GetByCarID(int Carid)
         {
 
             return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll(c=> c.CarId==Carid));
@@ -109,6 +107,16 @@ namespace Business.Concentre
                 return new SuccessResult();
             }
             return new ErrorResult(Messages.CarLimitAccess);
+        }
+
+        public IDataResult<string> GetBase64(string imagePath, IWebHostEnvironment env)
+        {
+            string data = FileOperation.Base64ImagePath(imagePath, env);
+            if (data!="")
+            {
+                return new SuccessDataResult<string>(data,"Resim datası getirildi.");
+            }
+            return new ErrorDataResult<string>();
         }
     }
 }

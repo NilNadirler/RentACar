@@ -19,5 +19,10 @@ namespace Business.Constants
         public static string Urunlist = "Product Listed";
         public static string CarLimitAccess="Max 5 Car Limit Access";
         public static string AuthorizationDenied="No Authorized";
+
+        public static string CreditCardAdded { get; internal set; }
+        public static string CreditCardDeleted { get; internal set; }
+        public static string CreditCardUpdated { get; internal set; }
+        public static string PaymentSuccess { get; internal set; }
     }
 }

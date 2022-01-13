@@ -23,7 +23,8 @@ namespace Business.Concentre
             _brandDal = brandDal;
         }
 
-      
+
+        [ValidationAspect(typeof(BrandValidator))]
         public IResult Add(Brand brand)
         {
             _brandDal.Add(brand);

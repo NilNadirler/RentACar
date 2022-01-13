@@ -3,7 +3,6 @@ C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.Generate
 C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.AssemblyInfoInputs.cache
 C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.AssemblyInfo.cs
 C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.csproj.CoreCompileInputs.cache
-C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\appsettings.json
@@ -71,3 +70,11 @@ C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.dll
 C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\ref\WepAPI.dll
 C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.pdb
 C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.genruntimeconfig.cache
+C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\Humanizer.dll
+C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\WepAPI\bin\Debug\net5.0\Entegrations.pdb
+C:\Users\nilna\source\repos\RecapProject\WepAPI\obj\Debug\net5.0\WepAPI.MvcApplicationPartsAssemblyInfo.cs

@@ -11,7 +11,6 @@ C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\ConsoleUI.dl
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\ref\ConsoleUI.dll
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\ConsoleUI.pdb
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Autofac.dll
-C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Autofac.Extras.DynamicProxy.dll
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Castle.Core.dll
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\FluentValidation.dll
@@ -62,3 +61,10 @@ C:\Users\nilna\source\repos\RecapProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.dl
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\obj\Debug\net5.0\ref\ConsoleUI.dll
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.pdb
 C:\Users\nilna\source\repos\RecapProject\ConsoleUI\obj\Debug\net5.0\ConsoleUI.genruntimeconfig.cache
+C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Humanizer.dll
+C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Entegrations.dll
+C:\Users\nilna\source\repos\RecapProject\ConsoleUI\bin\Debug\net5.0\Entegrations.pdb

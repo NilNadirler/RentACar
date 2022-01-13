@@ -12,6 +12,12 @@ namespace DataAccess.Concentre.EntityFramework
 {
     public class EfBrandDal : EfEntityRepositoryBase<Brand, RecapContext>, IBrandDal
     {
-
+        public bool IsUnique(string name)
+        {
+            using (RecapContext context = new RecapContext())
+            {
+                return context.Set<Brand>().Where(item=>item.BrandName==name).ToList().Count==0;
+            }
+        }
     }
 }

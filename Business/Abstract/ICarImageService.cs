@@ -15,8 +15,9 @@ namespace Business.Abstract
         IResult Add(CarImage carImage,IFormFile file, IWebHostEnvironment env);
         IResult Update(CarImage carImage, IFormFile file, IWebHostEnvironment env);
         IResult Delete(CarImage carImage, IWebHostEnvironment env);
+        IDataResult<string> GetBase64(string imagePath, IWebHostEnvironment env);
         IDataResult<List<CarImage>> GetAll();
-        IDataResult<List<CarImage>> GetbyCarID(int id);
+        IDataResult<List<CarImage>> GetByCarID(int id);
         IDataResult<List<CarImage>> GetImagePath(string imagepath);
         IDataResult<List<CarImage>> GetDate(DateTime date);
        
